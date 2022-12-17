@@ -1,0 +1,66 @@
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    grid-template-columns: 1fr;
+    padding: 5px 0px 0px 0px;
+    justify-items: center;
+    align-items: center;
+}
+
+.ChessBoard {
+    width: 640px;
+    height: 640px;
+    display: grid;
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+    border: 15px solid brown;
+}
+
+.ChessRow {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.Cell {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
+}
+
+.Cell:hover {
+    opacity: 0.6;
+    color: transparent;
+}
+
+.CellContent {
+    margin: 4px 0px 0px 4px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.knightPosition {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 10px;
+    top: 10px
+}
+
+.knightInfo {
+    margin: 0px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+span {
+    margin: 2px;
+}

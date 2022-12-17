@@ -1,0 +1,70 @@
+.App {
+  background-color: #282c34;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 100%;
+}
+
+.AssignmentButtons {
+  width: 450px;
+  position: relative;
+  left: 40%;
+}
+
+.Button {
+  margin: 0px 5px 0px 5px;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px 2px wheat;
+}
+
+.AssignmentBody {
+  width: 65%;
+  height: 90%;
+  position: relative;
+  left: 15%;
+  background-color: cyan;
+  border-radius: 30px;
+  border: 2px solid whitesmoke;
+  box-shadow: 0px 0px 5px 10px black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
